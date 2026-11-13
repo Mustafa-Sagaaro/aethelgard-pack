@@ -1,0 +1,14 @@
+name = "Epic Fight X Minecolonies   Compatibility Patch"
+filename = "minecoloniesefbiped-forge-1.20.1-1.0.4_hotfix_3.jar"
+side = "both"
+pin = true
+
+[download]
+hash-format = "sha1"
+hash = "0c495ef617ccc87fb2f48a3f7aeba19fc92da1bf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7985061
+project-id = 1513598

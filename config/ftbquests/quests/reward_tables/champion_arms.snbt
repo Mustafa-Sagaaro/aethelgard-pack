@@ -1,0 +1,14 @@
+{
+	id: "6EDB0FAB76522C00"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "simplyswords:netherite_claymore" }
+		{ item: "simplyswords:netherite_katana" }
+		{ item: "simplyswords:netherite_twinblade" }
+		{ item: "simplyswords:netherite_halberd" }
+		{ item: "epicfight:netherite_greatsword" }
+		{ item: "epicfight:uchigatana" }
+	]
+	title: "Arms of a Champion"
+}

@@ -1,0 +1,13 @@
+name = "Chronicles of Aethelgard"
+author = "Aethelgard Team"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "218fdeed60633c7daebe3f5061af78f9ec743d8eb3e135ca86f8b5fe73cc2710"
+
+[versions]
+forge = "47.4.28"
+minecraft = "1.20.1"

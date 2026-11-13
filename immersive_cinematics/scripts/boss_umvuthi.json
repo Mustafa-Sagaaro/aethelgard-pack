@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "id": "boss_umvuthi",
+    "name": "Umvuthi",
+    "author": "Aethelgard",
+    "version": 3,
+    "description": "Pre-fight intro for Umvuthi. Started by the KubeJS director for the whole nearby party.",
+    "block_keyboard": true,
+    "block_mouse": true,
+    "block_mob_ai": true,
+    "hide_hud": true,
+    "render_player_model": true,
+    "pause_when_game_paused": false,
+    "interruptible": true,
+    "skippable": true,
+    "hold_at_end": false,
+    "skip_vote_ratio": 50
+  },
+  "timeline": {
+    "total_duration": 6.0,
+    "tracks": [
+      {
+        "type": "LETTERBOX",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 6.0,
+            "keyframes": [
+              {
+                "time": 0,
+                "aspect_ratio": 1.78
+              },
+              {
+                "time": 0.7,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 5.3,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 6.0,
+                "aspect_ratio": 1.78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "CAMERA",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 6.0,
+            "transition": "cut",
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "position": {
+                  "dx": 11,
+                  "dy": 8.0,
+                  "dz": 6.6
+                },
+                "follow": "entity",
+                "follow_selector": "@e[type=mowziesmobs:umvuthi]",
+                "look_at": "entity",
+                "look_at_selector": "@e[type=mowziesmobs:umvuthi]",
+                "fov": 75,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 2.28,
+                "position": {
+                  "dx": -6.050000000000001,
+                  "dy": 5,
+                  "dz": 8.8
+                },
+                "follow": "entity",
+                "follow_selector": "@e[type=mowziesmobs:umvuthi]",
+                "look_at": "entity",
+                "look_at_selector": "@e[type=mowziesmobs:umvuthi]",
+                "fov": 62,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 4.32,
+                "position": {
+                  "dx": -2.2,
+                  "dy": 2.25,
+                  "dz": 4.62
+                },
+                "follow": "entity",
+                "follow_selector": "@e[type=mowziesmobs:umvuthi]",
+                "look_at": "entity",
+                "look_at_selector": "@e[type=mowziesmobs:umvuthi]",
+                "fov": 48,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 6.0,
+                "position": {
+                  "fwd": -2.5,
+                  "right": 0.6,
+                  "up": 0.4,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@e[type=mowziesmobs:umvuthi]",
+                "fov": 70,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              }
+            ],
+            "cam_breath_enabled": true,
+            "cam_breath_intensity": 0.04,
+            "cam_breath_type": "perlin"
+          }
+        ]
+      },
+      {
+        "type": "OVERLAY",
+        "clips": [
+          {
+            "start_time": 0.6,
+            "duration": 4.4,
+            "layer_type": "subtitle",
+            "text": "UMVUTHI\nWarden of the Overgrown Idol",
+            "z_index": 30,
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              },
+              {
+                "time": 0.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              },
+              {
+                "time": 3.9,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              },
+              {
+                "time": 4.4,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AUDIO",
+        "clips": [
+          {
+            "start_time": 0.1,
+            "duration": 4.0,
+            "sound": "minecraft:block.bell.resonate",
+            "source": "minecraft",
+            "volume": 0.8,
+            "pitch": 0.8,
+            "category": "ambient",
+            "attenuation": "none",
+            "fade_in": 0.2,
+            "fade_out": 0.6,
+            "keyframes": [
+              {
+                "time": 0,
+                "volume": 0.8
+              },
+              {
+                "time": 4.0,
+                "volume": 0.8
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

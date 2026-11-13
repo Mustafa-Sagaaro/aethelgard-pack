@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "id": "boss_sovereign",
+    "name": "The Abyssal Sovereign",
+    "author": "Aethelgard",
+    "version": 3,
+    "description": "Final boss intro, played when the party arrives in the End. Camera rises from the player and tracks the dragon.",
+    "block_keyboard": true,
+    "block_mouse": true,
+    "block_mob_ai": true,
+    "hide_hud": true,
+    "render_player_model": true,
+    "pause_when_game_paused": false,
+    "interruptible": true,
+    "skippable": true,
+    "hold_at_end": false,
+    "skip_vote_ratio": 50
+  },
+  "timeline": {
+    "total_duration": 7.0,
+    "tracks": [
+      {
+        "type": "LETTERBOX",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 7.0,
+            "keyframes": [
+              {
+                "time": 0,
+                "aspect_ratio": 1.78
+              },
+              {
+                "time": 0.7,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 6.3,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 7.0,
+                "aspect_ratio": 1.78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "CAMERA",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 7.0,
+            "transition": "cut",
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "position": {
+                  "fwd": -4.0,
+                  "right": 0.0,
+                  "up": 1.5,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@e[type=minecraft:ender_dragon]",
+                "fov": 75,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 2.6,
+                "position": {
+                  "fwd": -9.0,
+                  "right": 5.0,
+                  "up": 12.0,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@e[type=minecraft:ender_dragon]",
+                "fov": 55,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 5.0,
+                "position": {
+                  "fwd": -6.0,
+                  "right": -4.0,
+                  "up": 7.0,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@e[type=minecraft:ender_dragon]",
+                "fov": 40,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 7.0,
+                "position": {
+                  "fwd": -2.5,
+                  "right": 0.6,
+                  "up": 0.4,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@e[type=minecraft:ender_dragon]",
+                "fov": 70,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              }
+            ],
+            "cam_breath_enabled": true,
+            "cam_breath_intensity": 0.06,
+            "cam_breath_type": "perlin"
+          }
+        ]
+      },
+      {
+        "type": "OVERLAY",
+        "clips": [
+          {
+            "start_time": 0.8,
+            "duration": 5.2,
+            "layer_type": "subtitle",
+            "text": "THE ABYSSAL SOVEREIGN\nWhat the old king could not kill",
+            "z_index": 30,
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.6
+              },
+              {
+                "time": 0.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.6
+              },
+              {
+                "time": 4.7,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.6
+              },
+              {
+                "time": 5.2,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AUDIO",
+        "clips": [
+          {
+            "start_time": 0.1,
+            "duration": 5.0,
+            "sound": "minecraft:entity.ender_dragon.growl",
+            "source": "minecraft",
+            "volume": 1.0,
+            "pitch": 0.6,
+            "category": "ambient",
+            "attenuation": "none",
+            "fade_in": 0.2,
+            "fade_out": 0.6,
+            "keyframes": [
+              {
+                "time": 0,
+                "volume": 1.0
+              },
+              {
+                "time": 5.0,
+                "volume": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

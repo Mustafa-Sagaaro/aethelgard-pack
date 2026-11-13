@@ -1,0 +1,162 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act4"
+	group: "6C73C0449332A491"
+	icon: "minecraft:echo_shard"
+	id: "5D29192437D7D20C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["A1698ECAE657436D"]
+			description: [
+				"Far below the mountains lies a city built around a portal nobody was meant to open."
+				""
+				"Sneak. Carry wool. Do &cnot&r wake the Warden unless your whole party is ready for it."
+			]
+			icon: "minecraft:sculk_shrieker"
+			id: "B1B8DAECE834614A"
+			rewards: [
+				{ id: "59B2BBBB90DF1B1C", type: "command", title: "Reveal: an Ancient City", icon: "minecraft:compass", command: "/locate structure minecraft:ancient_city", elevate_perms: true, silent: false }
+				{ id: "B1ECE6A78A8916B7", type: "item", item: "minecraft:white_wool", count: 32 }
+				{ id: "CFDE8C096A2F490C", type: "xp_levels", xp_levels: 5 }
+			]
+			tasks: [
+				{ id: "5544773EB5DFD8B9", type: "structure", structure: "minecraft:ancient_city" }
+			]
+			title: "The Ancient City"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["B1B8DAECE834614A"]
+			description: [
+				"Light the great portal frame in the Ancient City with a &eHeart of the Deep&r (a Warden drops one) to enter the Otherside."
+			]
+			icon: "deeperdarker:heart_of_the_deep"
+			id: "28C462F561E0D0A7"
+			rewards: [
+				{ id: "FDC927F554AD6F90", type: "item", item: "minecraft:golden_apple", count: 6 }
+				{ id: "AC76621F920D339A", type: "xp_levels", xp_levels: 8 }
+			]
+			tasks: [
+				{ id: "0C28E5F5579C18D0", type: "dimension", dimension: "deeperdarker:otherside" }
+			]
+			title: "The Otherside"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28C462F561E0D0A7"]
+			description: [
+				"In an Ancient Temple of the Otherside waits the &9Stalker&r. Kill it - or put down a Warden - and the &9Echoing Sigil&r is yours."
+			]
+			icon: "kubejs:echoing_sigil"
+			id: "899388F2E414FBBB"
+			rewards: [
+				{ id: "58380B1D3552F5B3", type: "choice", table_id: 4383617730508607161L }
+				{ id: "72CD72DA9FA3749C", type: "item", item: "minecraft:netherite_ingot", count: 2 }
+				{ id: "67D95B6BC6A98A60", type: "xp_levels", xp_levels: 12 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Warden of Echoes"
+			tasks: [
+				{ id: "4EF844D181C5E538", type: "item", item: "kubejs:echoing_sigil" }
+			]
+			title: "Silence the Deep"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["A1698ECAE657436D"]
+			description: [
+				"The illagers have a new master: the &eInvoker&r, who stole the Celestial Eye and rules from an Illager Fort."
+				""
+				"Claim the reward to have the nearest fort marked."
+			]
+			icon: "minecraft:white_banner"
+			id: "D014363B2790670A"
+			rewards: [
+				{ id: "0EA3C939069E61E5", type: "command", title: "Reveal: an Illager Fort", icon: "minecraft:compass", command: "/locate structure illagerinvasion:illager_fort", elevate_perms: true, silent: false }
+				{ id: "1C06BA4984A9E589", type: "item", item: "minecraft:shield" }
+				{ id: "AF7C31F41FA211DE", type: "item", item: "minecraft:arrow", count: 64 }
+			]
+			tasks: [
+				{ id: "21506F75F171F976", type: "checkmark", title: "Show me the way" }
+			]
+			title: "Banners on the Ridge"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D014363B2790670A"]
+			description: [
+				"He flies, he summons fangs and Surrendered, and he shields himself. Break the shield with heavy hits, then bring him down."
+			]
+			icon: "illagerinvasion:hallowed_gem"
+			id: "CCE9592B3CB88CE4"
+			rewards: [
+				{ id: "F6DE4C0EC0C5E1FD", type: "choice", table_id: 4383617730508607161L }
+				{ id: "2A2697A09AE851A5", type: "item", item: "illagerinvasion:hallowed_gem", count: 2 }
+				{ id: "F1C9B82B9E064934", type: "xp_levels", xp_levels: 12 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Warden of the Sky"
+			tasks: [
+				{ id: "EF979DC1C40C2389", type: "kill", entity: "illagerinvasion:invoker", value: 1L }
+			]
+			title: "The Invoker"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D014363B2790670A"]
+			description: [
+				"&7Optional.&r The Heavenly Conqueror - a flying fortress from When Dungeons Arise - is the richest dungeon in the overworld. Loot chests are per-player (Lootr), so everyone gets their own haul."
+			]
+			icon: "minecraft:elytra"
+			id: "4E0865E440EE5923"
+			optional: true
+			rewards: [
+				{ id: "B737BBC423F1E6D3", type: "command", title: "Reveal: a Heavenly Conqueror", icon: "minecraft:compass", command: "/locate structure dungeons_arise:heavenly_conqueror", elevate_perms: true, silent: false }
+				{ id: "4A2AF545674847B0", type: "item", item: "minecraft:elytra" }
+				{ id: "0941EF6322FF90DD", type: "xp_levels", xp_levels: 10 }
+			]
+			tasks: [
+				{ id: "C3D3326770F05628", type: "structure", structure: "dungeons_arise:heavenly_conqueror" }
+			]
+			title: "Citadels in the Sky"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["899388F2E414FBBB", "CCE9592B3CB88CE4"]
+			description: [
+				"The &9Echoing Sigil&r and the &eCelestial Eye&r. All six relics are in your hands."
+				""
+				"There is only one thing left to do with them."
+			]
+			icon: "kubejs:celestial_eye"
+			id: "3B005C8FFF20FD73"
+			rewards: [
+				{ id: "FC7E537A70DBAFBA", type: "item", item: "minecraft:ender_eye", count: 12 }
+				{ id: "E31D31EFD28E26A2", type: "item", item: "minecraft:netherite_ingot", count: 4 }
+				{ id: "8B2EF803F9D3BACE", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "146D6FEEF05F7D0A", type: "item", item: "kubejs:echoing_sigil" }
+				{ id: "6AFDF82948D8BA2F", type: "item", item: "kubejs:celestial_eye" }
+			]
+			title: "Six Relics"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["The Otherside and the illager citadels."]
+	title: "Act IV - Shadows of the Deep"
+}

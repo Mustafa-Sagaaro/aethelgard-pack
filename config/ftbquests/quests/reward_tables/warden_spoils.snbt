@@ -1,0 +1,14 @@
+{
+	id: "3CD5BD19BA11CEB9"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "artifacts:crystal_heart" }
+		{ item: "artifacts:power_glove" }
+		{ item: "artifacts:running_shoes" }
+		{ item: "artifacts:cross_necklace" }
+		{ item: "artifacts:feral_claws" }
+		{ item: "artifacts:cloud_in_a_bottle" }
+	]
+	title: "Warden's Spoils"
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "id": "aethelgard_intro",
+    "name": "World Awakening",
+    "author": "Aethelgard",
+    "version": 3,
+    "description": "First-login intro: a slow sweep around the player introducing Aethelgard and the failing Seal.",
+    "block_keyboard": true,
+    "block_mouse": true,
+    "block_mob_ai": true,
+    "hide_hud": true,
+    "render_player_model": true,
+    "pause_when_game_paused": false,
+    "interruptible": true,
+    "skippable": true,
+    "hold_at_end": false,
+    "skip_vote_ratio": 50,
+    "triggers": [
+      {
+        "type": "login",
+        "repeatable": false,
+        "delay": 2.0
+      }
+    ]
+  },
+  "timeline": {
+    "total_duration": 10.0,
+    "tracks": [
+      {
+        "type": "LETTERBOX",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 10.0,
+            "keyframes": [
+              {
+                "time": 0,
+                "aspect_ratio": 1.78
+              },
+              {
+                "time": 0.7,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 9.3,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 10.0,
+                "aspect_ratio": 1.78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "CAMERA",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 10.0,
+            "transition": "cut",
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "position": {
+                  "dx": 0,
+                  "dy": 42,
+                  "dz": -30
+                },
+                "look_at": "entity",
+                "look_at_selector": "@p",
+                "fov": 80,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 3.5,
+                "position": {
+                  "dx": 26,
+                  "dy": 24,
+                  "dz": -8
+                },
+                "look_at": "entity",
+                "look_at_selector": "@p",
+                "fov": 72,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 7.0,
+                "position": {
+                  "dx": 12,
+                  "dy": 9,
+                  "dz": 14
+                },
+                "look_at": "entity",
+                "look_at_selector": "@p",
+                "fov": 62,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 10.0,
+                "position": {
+                  "fwd": -3.0,
+                  "right": 0.0,
+                  "up": 0.6,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@p",
+                "fov": 70,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              }
+            ],
+            "cam_breath_enabled": true,
+            "cam_breath_intensity": 0.03,
+            "cam_breath_type": "perlin"
+          }
+        ]
+      },
+      {
+        "type": "OVERLAY",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 1.6,
+            "layer_type": "fade",
+            "color": "#000000",
+            "z_index": 10,
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 1.0
+              },
+              {
+                "time": 1.6,
+                "opacity": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "OVERLAY",
+        "clips": [
+          {
+            "start_time": 0.8,
+            "duration": 3.0,
+            "layer_type": "subtitle",
+            "text": "AETHELGARD\nA kingdom that outlived its king",
+            "z_index": 30,
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.72,
+                "font_scale": 2.6
+              },
+              {
+                "time": 0.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.72,
+                "font_scale": 2.6
+              },
+              {
+                "time": 2.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.72,
+                "font_scale": 2.6
+              },
+              {
+                "time": 3.0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.72,
+                "font_scale": 2.6
+              }
+            ]
+          },
+          {
+            "start_time": 4.0,
+            "duration": 2.8,
+            "layer_type": "subtitle",
+            "text": "Six relics hold the Seal.\nSix Wardens have forgotten why.",
+            "z_index": 30,
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.7
+              },
+              {
+                "time": 0.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.7
+              },
+              {
+                "time": 2.3,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.7
+              },
+              {
+                "time": 2.8,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.7
+              }
+            ]
+          },
+          {
+            "start_time": 7.0,
+            "duration": 2.7,
+            "layer_type": "subtitle",
+            "text": "The Seal is failing.\nTake them back.",
+            "z_index": 30,
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.9
+              },
+              {
+                "time": 0.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.9
+              },
+              {
+                "time": 2.2,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.9
+              },
+              {
+                "time": 2.7,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.76,
+                "font_scale": 1.9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AUDIO",
+        "clips": [
+          {
+            "start_time": 0.2,
+            "duration": 5.0,
+            "sound": "minecraft:ambient.cave",
+            "source": "minecraft",
+            "volume": 0.9,
+            "pitch": 0.6,
+            "category": "ambient",
+            "attenuation": "none",
+            "fade_in": 0.2,
+            "fade_out": 0.6,
+            "keyframes": [
+              {
+                "time": 0,
+                "volume": 0.9
+              },
+              {
+                "time": 5.0,
+                "volume": 0.9
+              }
+            ]
+          },
+          {
+            "start_time": 6.8,
+            "duration": 3.0,
+            "sound": "minecraft:block.bell.resonate",
+            "source": "minecraft",
+            "volume": 0.7,
+            "pitch": 0.6,
+            "category": "ambient",
+            "attenuation": "none",
+            "fade_in": 0.2,
+            "fade_out": 0.6,
+            "keyframes": [
+              {
+                "time": 0,
+                "volume": 0.7
+              },
+              {
+                "time": 3.0,
+                "volume": 0.7
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

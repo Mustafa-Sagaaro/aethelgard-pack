@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act2"
+	group: "6C73C0449332A491"
+	icon: "dragonmounts:dragon_egg"
+	id: "D4B34A6F39AF3188"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["690E6042E6655FC3"]
+			description: [
+				"The old king's knights rode dragons. Their eggs still turn up in ruins - and one has found its way to you."
+				""
+				"Choose a breed. More eggs can be crafted later: a &cWyrm Heartscale&r + an Egg + an element (lava bucket, packed ice, moss, prismarine, feather, bone block, nether wart or ender pearl)."
+			]
+			id: "C7DADDF8CFFA0FD2"
+			rewards: [
+				{ id: "A96E1237B08DF166", type: "choice", table_id: -1815797015633247750L }
+				{ id: "CC141FE772C6B896", type: "item", item: "dragonbound_ascension:dragon_summoning_staff" }
+				{ id: "467B8B2750788C7C", type: "item", item: "minecraft:cod", count: 32 }
+			]
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "Choose your companion"
+			tasks: [
+				{ id: "77B6501CA02C89A6", type: "checkmark", title: "Take the egg" }
+			]
+			title: "The Egg"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C7DADDF8CFFA0FD2"]
+			description: [
+				"Place the egg and &eright-click&r it to start hatching. It takes a little while - keep it somewhere safe."
+				""
+				"Tame the hatchling with &efish&r. Once grown, a &esaddle&r lets you ride it; the &eDragon Summoning Staff&r calls it to you from anywhere."
+			]
+			icon: "minecraft:cod"
+			id: "D68EC09CAF1EAD02"
+			rewards: [
+				{ id: "093224230ADD0A2F", type: "item", item: "minecraft:saddle" }
+				{ id: "1B0162FA16963C16", type: "item", item: "minecraft:cod", count: 32 }
+				{ id: "FEDBD633DC9A1AD9", type: "xp_levels", xp_levels: 3 }
+			]
+			tasks: [
+				{ id: "951B5CC33759A548", type: "checkmark", title: "My dragon has hatched" }
+			]
+			title: "Hatchling"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["D68EC09CAF1EAD02"]
+			description: [
+				"Your dragon earns experience from fights at your side. Open the &eDragon Compendium&r to spend its levels: pick a &6Calling&r, then work towards Mastery at level 20."
+				""
+				"Dragons are companions, not a win button: they deal capped damage to Wardens, and a Warden's blows always hurt them. Fight &otogether&r."
+			]
+			icon: "dragonbound_ascension:dragon_compendium"
+			id: "02D693F43B9F7960"
+			rewards: [
+				{ id: "560EB93E985F5FEB", type: "xp_levels", xp_levels: 5 }
+				{ id: "1C3C7239DF8293A5", type: "item", item: "minecraft:golden_apple", count: 4 }
+			]
+			tasks: [
+				{ id: "9FDA302B1D2B2C9E", type: "item", item: "dragonbound_ascension:dragon_compendium" }
+			]
+			title: "Ascension"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["D68EC09CAF1EAD02"]
+			description: [
+				"Press the skill tree key to open your &ePassive Skill Tree&r. Experience turns into skill points; points turn into a build."
+				""
+				"The tree is capped at 60 points here - enough for a real build, not enough to become untouchable."
+			]
+			icon: "skilltree:wisdom_scroll"
+			id: "8CEB8D45A8BDF6BA"
+			rewards: [
+				{ id: "18E570CA1A0DECE1", type: "item", item: "skilltree:wisdom_scroll", count: 2 }
+				{ id: "24183B4B977185BC", type: "item", item: { id: "epicfight:skillbook", Count: 1b, tag: {skill:"epicfight:endurance"} } }
+			]
+			tasks: [
+				{ id: "2668368EF9163238", type: "checkmark", title: "First point spent" }
+			]
+			title: "The Passive Tree"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["C7DADDF8CFFA0FD2"]
+			description: [
+				"Lesser guardians - the Ferrous Wroughtnaut, Elder Guardians, Evokers, Kobolediators - shed &cWyrm Heartscales&r when they fall."
+				""
+				"One scale crafts a second dragon egg, so every party member can ride."
+			]
+			icon: "kubejs:wyrm_heartscale"
+			id: "18118AF64043EE80"
+			optional: true
+			rewards: [
+				{ id: "F57CE82DFFD47939", type: "command", title: "Reveal: a Wroughtnaut chamber", icon: "minecraft:compass", command: "/locate structure mowziesmobs:wrought_chamber", elevate_perms: true, silent: false }
+				{ id: "B1380415C96FF83C", type: "item", item: "minecraft:egg", count: 4 }
+				{ id: "F8D0282EB89BD0F8", type: "xp_levels", xp_levels: 3 }
+			]
+			tasks: [
+				{ id: "9EA0133815CC0526", type: "item", item: "kubejs:wyrm_heartscale" }
+			]
+			title: "Wyrm Heartscale"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["02D693F43B9F7960"]
+			description: [
+				"The first Warden sleeps in the frozen north: &bFrostmaw&r, keeper of the Frostbound Crown."
+				""
+				"Claim this quest's reward to have its lair marked for you."
+			]
+			icon: "minecraft:snow_block"
+			id: "B72337504EBA5C1C"
+			rewards: [
+				{ id: "C5848226334AE03B", type: "command", title: "Reveal: Frostmaw's lair", icon: "minecraft:compass", command: "/locate structure mowziesmobs:frostmaw_spawn", elevate_perms: true, silent: false }
+				{ id: "31E75F0716A3481E", type: "item", item: "minecraft:cooked_beef", count: 16 }
+			]
+			tasks: [
+				{ id: "67863A031D7B53A3", type: "checkmark", title: "Show me the way" }
+			]
+			title: "Tracks in the Snow"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["B72337504EBA5C1C"]
+			description: [
+				"It wakes when you come close. Stay out of its ice breath, punish it after it slams, and keep your dragon alive."
+			]
+			icon: "mowziesmobs:ice_crystal"
+			id: "AF5D2D79ACA26AD2"
+			rewards: [
+				{ id: "997F710F98CF7D72", type: "choice", table_id: 4383617730508607161L }
+				{ id: "57A2C67082C303D9", type: "xp_levels", xp_levels: 8 }
+				{ id: "77D124AAF47DC5D6", type: "item", item: { id: "epicfight:skillbook", Count: 1b, tag: {skill:"epicfight:guard"} } }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Warden of Winter"
+			tasks: [
+				{ id: "D2F6D95A1415F033", type: "kill", entity: "mowziesmobs:frostmaw", value: 1L }
+			]
+			title: "Frostmaw"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["8CEB8D45A8BDF6BA"]
+			description: [
+				"The second Warden rules a grove of masked hunters: &6Umvuthi&r, keeper of the Overgrown Idol."
+				""
+				"Claim this quest's reward to have the grove marked for you."
+			]
+			icon: "mowziesmobs:umvuthana_mask_fury"
+			id: "F58FFB6AFEB9FC6A"
+			rewards: [
+				{ id: "124AF14AAD4B7D19", type: "command", title: "Reveal: Umvuthi's grove", icon: "minecraft:compass", command: "/locate structure mowziesmobs:umvuthana_grove", elevate_perms: true, silent: false }
+				{ id: "2E41830BDD31C659", type: "item", item: "minecraft:golden_carrot", count: 16 }
+			]
+			tasks: [
+				{ id: "45115AC76D9CF235", type: "checkmark", title: "Show me the way" }
+			]
+			title: "Drums in the Savanna"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["F58FFB6AFEB9FC6A"]
+			description: [
+				"He will not fight until you strike first. When he does: the sun itself answers. Kill his healers, dodge the beam."
+			]
+			icon: "mowziesmobs:sol_visage"
+			id: "368A9BAF9DAF08C1"
+			rewards: [
+				{ id: "E18676976246F0FA", type: "choice", table_id: 4383617730508607161L }
+				{ id: "2C5F5798D4D94BEF", type: "xp_levels", xp_levels: 8 }
+				{ id: "7E8AD693B735D575", type: "item", item: { id: "epicfight:skillbook", Count: 1b, tag: {skill:"epicfight:technician"} } }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Warden of the Sun"
+			tasks: [
+				{ id: "1A3F7953EF1BEB0F", type: "kill", entity: "mowziesmobs:umvuthi", value: 1L }
+			]
+			title: "Umvuthi"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["AF5D2D79ACA26AD2", "368A9BAF9DAF08C1"]
+			description: [
+				"The &bFrostbound Crown&r and the &aOvergrown Idol&r. Two of six."
+				""
+				"The next Wardens are not asleep. One waits in a burning arena beneath the Nether. One circles a drowned city in the deep ocean."
+			]
+			icon: "kubejs:frostbound_crown"
+			id: "1A20C137AB75E2C9"
+			rewards: [
+				{ id: "70454E8D003C5569", type: "item", item: "minecraft:diamond", count: 12 }
+				{ id: "1435FFC93F0CC34A", type: "item", item: "minecraft:netherite_scrap", count: 2 }
+				{ id: "730BF3CDF67F10DF", type: "xp_levels", xp_levels: 10 }
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "55ABDB1C08A500FF", type: "item", item: "kubejs:frostbound_crown" }
+				{ id: "176F0817D67EBC49", type: "item", item: "kubejs:overgrown_idol" }
+			]
+			title: "Two Relics"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Bond with a dragon and bring down the first two Wardens."]
+	title: "Act II - Awakening the Wings"
+}

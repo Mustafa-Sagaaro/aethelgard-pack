@@ -1,0 +1,274 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act1"
+	group: "6C73C0449332A491"
+	icon: "minecraft:campfire"
+	id: "9293AB7C89FA6A18"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Aethelgard was a kingdom once. Its first king bound the &5Abyssal Sovereign&r beyond the End and locked the door with six &dPlanar Relics&r, each guarded by a Warden."
+				""
+				"The Wardens have gone feral. The Seal is cracking. Someone has to take the relics back, open the door on purpose - and finish what the old king could not."
+				""
+				"That someone is your party. This book tracks progress for your &ewhole team&r: one of you finishing a task finishes it for everyone, and every member can claim every reward."
+			]
+			icon: "ftbquests:book"
+			id: "AAA52F860649A08B"
+			rewards: [
+				{ id: "25B6A6B5B0102E7C", type: "item", item: "minecraft:cooked_beef", count: 16 }
+				{ id: "4052D3E877234892", type: "xp_levels", xp_levels: 3 }
+			]
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "Start here"
+			tasks: [
+				{ id: "B7D16063162D4FEF", type: "checkmark", title: "I'm ready" }
+			]
+			title: "The Seal is Failing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AAA52F860649A08B"]
+			description: [
+				"This world uses &6Epic Fight&r. Press &eR&r to switch between Mining Mode and &cBattle Mode&r."
+				""
+				"In Battle Mode your attacks become combos, and you already know two skills:"
+				"&b- Roll&r: dodge through an attack (it costs stamina - the blue bar)."
+				"&b- Guard&r: hold your guard key with a weapon out to block."
+				""
+				"Lock onto a target with the lock-on key. Every key is listed under &eOptions > Controls > Epic Fight&r - rebind anything that feels wrong."
+				""
+				"Go practise on something that deserves it."
+			]
+			icon: "epicfight:iron_longsword"
+			id: "72CD2588F38626E0"
+			rewards: [
+				{ id: "0DDA0DB8AD853352", type: "item", item: { id: "epicfight:skillbook", Count: 1b, tag: {skill:"epicfight:step"} } }
+				{ id: "270F6B63AF7F5883", type: "xp_levels", xp_levels: 2 }
+			]
+			subtitle: "Press R"
+			tasks: [
+				{ id: "F087C4FC3A173CCD", type: "kill", entity: "minecraft:zombie", value: 5L }
+			]
+			title: "Battle Mode"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72CD2588F38626E0"]
+			description: [
+				"Every weapon type fights differently in Battle Mode: greatswords are slow and brutal, katanas and tachis are quick, spears keep enemies at range, twinblades never stop moving."
+				""
+				"Get a shield and a set of iron armour, then pick the weapon that suits you."
+			]
+			icon: "simplyswords:iron_claymore"
+			id: "31F0579E77242B83"
+			rewards: [
+				{ id: "201E434A42865DE8", type: "choice", table_id: 2428325815067360578L }
+				{ id: "194ABE0141D18B0E", type: "item", item: { id: "epicfight:skillbook", Count: 1b, tag: {skill:"epicfight:parrying"} } }
+			]
+			tasks: [
+				{ id: "046BC22E67BF84E8", type: "item", item: "minecraft:shield" }
+				{ id: "132A94ACC2D9BA7F", type: "item", item: "minecraft:iron_chestplate" }
+			]
+			title: "Proper Steel"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["AAA52F860649A08B"]
+			description: [
+				"Open the &eFTB Teams&r screen (button in the top-left of your inventory) and create a &aParty&r, then invite your friends."
+				""
+				"Party members share quest progress and claimed land, and they &ccannot hurt each other&r: wide weapon sweeps, skills, arrows and dragon attacks all pass harmlessly through your friends, their pets and their dragons."
+				""
+				"Want a duel? Leave the party first."
+			]
+			icon: "minecraft:blue_banner"
+			id: "B4B7A9CDF72E413C"
+			rewards: [
+				{ id: "7193109EB4E1F70E", type: "xp_levels", xp_levels: 3 }
+				{ id: "509726C326ECBDE3", type: "item", item: "minecraft:golden_apple", count: 2 }
+			]
+			tasks: [
+				{ id: "1388B01699B1619E", type: "checkmark", title: "We are a party" }
+			]
+			title: "Strength in Numbers"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B4B7A9CDF72E413C"]
+			description: [
+				"Open the map (&eFTB Chunks&r) and drag over chunks to claim them for your party. Claimed land is protected from explosions, mob griefing and strangers."
+				""
+				"The same mod gives you the minimap and waypoints - death points are marked automatically, and your &7corpse&r keeps every item safe until you return."
+			]
+			icon: "minecraft:filled_map"
+			id: "A73A2793532229D4"
+			rewards: [
+				{ id: "C49563A849B24C65", type: "item", item: "minecraft:torch", count: 64 }
+				{ id: "EBFFA86CE6956610", type: "item", item: "minecraft:oak_log", count: 64 }
+			]
+			tasks: [
+				{ id: "ADE669C4D0779FDC", type: "checkmark", title: "Land claimed" }
+			]
+			title: "Stake Your Claim"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AAA52F860649A08B"]
+			description: [
+				"Hold the &eUltimine key&r (default: &e`&r) while breaking a block to mine the whole vein or tree at once."
+				""
+				"Ores here are generous too: every ore block drops more than vanilla. You are here for adventure, not for a second job."
+			]
+			icon: "minecraft:iron_pickaxe"
+			id: "31E912497752C930"
+			rewards: [
+				{ id: "DE83E8C09677AAC0", type: "item", item: "minecraft:iron_ingot", count: 16 }
+				{ id: "9840F29096127E93", type: "item", item: "minecraft:coal", count: 32 }
+			]
+			tasks: [
+				{ id: "C6B2F054D2F4A610", type: "item", item: "minecraft:raw_iron", count: 16L }
+			]
+			title: "No More Strip Mining"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["31E912497752C930"]
+			description: [
+				"Craft a &eSophisticated Backpack&r. It takes upgrades: pickup, magnet, stack upgrades, even a crafting table."
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "ED9B1BB29B0A4F58"
+			rewards: [
+				{ id: "C08B3C72F7E49D36", type: "item", item: "sophisticatedbackpacks:pickup_upgrade" }
+				{ id: "6F4B202E842D544F", type: "item", item: "sophisticatedbackpacks:stack_upgrade_tier_1" }
+			]
+			tasks: [
+				{ id: "B286877B25E53853", type: "item", item: "sophisticatedbackpacks:backpack" }
+			]
+			title: "Deep Pockets"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["ED9B1BB29B0A4F58"]
+			description: [
+				"&eTom's Simple Storage&r: put an Inventory Connector next to your chests and a Storage Terminal on it. Every connected chest becomes one searchable inventory. No power, no channels, no setup."
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "99D088758AAB70B7"
+			rewards: [
+				{ id: "0A8972FCAF1D7DB8", type: "item", item: "toms_storage:ts.inventory_connector" }
+				{ id: "B26CE4BF05BD36FD", type: "item", item: "minecraft:chest", count: 16 }
+			]
+			tasks: [
+				{ id: "DF71F6CCB47FA0D9", type: "item", item: "toms_storage:ts.storage_terminal" }
+			]
+			title: "One Terminal, Every Chest"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["A73A2793532229D4"]
+			description: [
+				"Time to rebuild. Craft a &eSupply Camp&r (or a Supply Ship near water) and place it - it holds your Town Hall and a Build Tool."
+				""
+				"&6MineColonies&r citizens build, farm, mine and guard for you. Add your friends as &eOfficers&r in the Town Hall so everyone can manage the colony."
+			]
+			icon: "minecolonies:supplycampdeployer"
+			id: "D23322B8C3D5B752"
+			rewards: [
+				{ id: "5F90E49A31E9004C", type: "item", item: "minecraft:oak_planks", count: 64 }
+				{ id: "30D0D9DE5E70AD46", type: "item", item: "minecraft:cobblestone", count: 64 }
+				{ id: "07D7666E23CD274D", type: "item", item: "minecraft:bread", count: 32 }
+			]
+			tasks: [
+				{ id: "3A6A6414AD78007D", type: "item", item: "minecolonies:supplycampdeployer" }
+			]
+			title: "A Flag in the Ashes"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["D23322B8C3D5B752"]
+			description: [
+				"Place the &eTown Hall&r with the Build Tool, then a Builder's Hut. Your builder will ask for materials - the Town Hall and Builder GUIs list exactly what is needed."
+				""
+				"Raids are tuned down in this pack: raiders &cnever break blocks&r, so your builds are safe even if a raid goes badly."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "E5463A8F2C510AA9"
+			rewards: [
+				{ id: "DC82AC8489663550", type: "item", item: "minecolonies:clipboard" }
+				{ id: "513ABA191FE51F9F", type: "item", item: "minecraft:iron_ingot", count: 16 }
+				{ id: "D64C3D27DA20591F", type: "xp_levels", xp_levels: 5 }
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{ id: "945869715A0AEF0C", type: "item", item: "minecolonies:blockhutbuilder" }
+			]
+			title: "The First Colony"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31F0579E77242B83"]
+			description: [
+				"&eWaystones&r are free to use here - no XP cost. Activate one by right-clicking it, then travel between any you have found."
+				""
+				"Place these at your colony, and carry a &eWarp Stone&r to jump to any waystone from anywhere."
+			]
+			icon: "waystones:waystone"
+			id: "A8FB6248787304A6"
+			rewards: [
+				{ id: "5E68452B8CD28012", type: "item", item: "waystones:waystone", count: 2 }
+				{ id: "EC23D6E1C750A8BE", type: "item", item: "waystones:return_scroll", count: 4 }
+			]
+			tasks: [
+				{ id: "912C36E2E836A768", type: "item", item: "waystones:warp_stone" }
+			]
+			title: "Stones That Remember"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["E5463A8F2C510AA9", "A8FB6248787304A6", "B4B7A9CDF72E413C"]
+			description: [
+				"You have a party, a home and a sword arm. The old kingdom has a pulse again."
+				""
+				"Take these compasses: the &eExplorer's Compass&r finds any structure, the &eNature's Compass&r any biome. You will never have to wander blind."
+				""
+				"&6Act II opens: it is time to find your wings.&r"
+			]
+			icon: "minecraft:nether_star"
+			id: "690E6042E6655FC3"
+			rewards: [
+				{ id: "920A18B269E4B4A5", type: "item", item: "explorerscompass:explorerscompass" }
+				{ id: "F7504F2169192744", type: "item", item: "naturescompass:naturescompass" }
+				{ id: "199D7E1BAAAB0C84", type: "xp_levels", xp_levels: 5 }
+				{ id: "E3DFA6322C5DCFCE", type: "item", item: "minecraft:diamond", count: 6 }
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "8035FB856A1BB3E0", type: "checkmark", title: "Onwards" }
+			]
+			title: "Ashes No More"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Learn to fight, form your party, raise a colony."]
+	title: "Act I - Ashes of the Old Kingdom"
+}

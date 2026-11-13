@@ -1,0 +1,205 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act6"
+	group: "6C73C0449332A491"
+	icon: "minecraft:golden_helmet"
+	id: "FC4687DF2AA7E683"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5C78E40B5B004402"]
+			description: [
+				"The Sovereign is dead. Nothing is hunting you any more - everything from here on is because you want to."
+				""
+				"Build the city. Raise the dragons. Hunt what is left of the old world's monsters."
+			]
+			id: "D5F6B198723FEF1C"
+			rewards: [
+				{ id: "B6F4AF904C801AE2", type: "item", item: "minecraft:firework_rocket", count: 64 }
+				{ id: "32C71F5C375990AC", type: "xp_levels", xp_levels: 10 }
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{ id: "5B265ECA54F2108D", type: "checkmark", title: "Long live Aethelgard" }
+			]
+			title: "A Kingdom Restored"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["D5F6B198723FEF1C"]
+			description: [
+				"Upgrade your &eTown Hall to level 5&r and fill the colony with every kind of worker. Guard towers, a university, a hospital, taverns for visitors."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "A614AFA154249D30"
+			rewards: [
+				{ id: "8615C85553090A91", type: "item", item: "minecolonies:ancienttome", count: 8 }
+				{ id: "AA26190A84C3EA73", type: "item", item: "minecraft:emerald_block", count: 8 }
+				{ id: "D0DF2C4BD9638221", type: "xp_levels", xp_levels: 20 }
+			]
+			tasks: [
+				{ id: "505139E67A6F8359", type: "checkmark", title: "Town Hall is level 5" }
+			]
+			title: "Metropolis"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["D5F6B198723FEF1C"]
+			description: [
+				"Take a dragon to &elevel 20&r and complete its Mastery in the Dragon Compendium."
+			]
+			icon: "dragonbound_ascension:dragon_compendium"
+			id: "4401A180DFF529C3"
+			rewards: [
+				{ id: "1F76F024A7B12F8B", type: "item", item: "kubejs:wyrm_heartscale", count: 3 }
+				{ id: "B6D4A57955093F41", type: "xp_levels", xp_levels: 20 }
+			]
+			tasks: [
+				{ id: "1564770116EAD61F", type: "checkmark", title: "Level 20 Mastery reached" }
+			]
+			title: "Dragon Mastery"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["D5F6B198723FEF1C"]
+			description: [
+				"The Sovereign's last general still holds a Ruined Citadel on the outer End islands. The &eVoid Eye&r points the way."
+			]
+			icon: "cataclysm:void_core"
+			id: "13D892B47B6523ED"
+			rewards: [
+				{ id: "3D5773F87904CE91", type: "item", item: "cataclysm:void_eye", count: 2 }
+				{ id: "868203473F2D727D", type: "item", item: "minecraft:shulker_shell", count: 8 }
+				{ id: "54550278BB9868F7", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Ruined Citadel"
+			tasks: [
+				{ id: "1BE6B508D48E079A", type: "kill", entity: "cataclysm:ender_guardian", value: 1L }
+			]
+			title: "The Ender Guardian"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13D892B47B6523ED"]
+			description: [
+				"A war machine sleeping in an Ancient Factory. The &eMech Eye&r finds it; a Nether Star wakes it."
+			]
+			icon: "cataclysm:witherite_ingot"
+			id: "555675A1EFC01043"
+			rewards: [
+				{ id: "C5428152193827C0", type: "item", item: "cataclysm:mech_eye", count: 2 }
+				{ id: "231E5CE8D8DABE7A", type: "item", item: "minecraft:netherite_ingot", count: 4 }
+				{ id: "133751E052375A2D", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Ancient Factory"
+			tasks: [
+				{ id: "27A9DD8D745B3A6B", type: "kill", entity: "cataclysm:the_harbinger", value: 1L }
+			]
+			title: "The Harbinger"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["13D892B47B6523ED"]
+			description: [
+				"Bones the size of a cathedral, buried in a Cursed Pyramid. Follow the &eDesert Eye&r."
+			]
+			icon: "cataclysm:ancient_metal_ingot"
+			id: "354CF81811115C48"
+			rewards: [
+				{ id: "9C910A656801CFDB", type: "item", item: "cataclysm:desert_eye", count: 2 }
+				{ id: "963CAF6C95D6D1F0", type: "item", item: "minecraft:netherite_ingot", count: 4 }
+				{ id: "4A1BAEF470260E5F", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Cursed Pyramid"
+			tasks: [
+				{ id: "0A73F2B530EA2D3E", type: "kill", entity: "cataclysm:ancient_remnant", value: 1L }
+			]
+			title: "The Ancient Remnant"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["555675A1EFC01043"]
+			description: [
+				"A cursed champion frozen in a Frosted Prison. Follow the &eCursed Eye&r."
+			]
+			icon: "cataclysm:cursium_ingot"
+			id: "18FBADCEFCCE8366"
+			rewards: [
+				{ id: "C754117D02E10A99", type: "item", item: "cataclysm:cursed_eye", count: 2 }
+				{ id: "E92D175DCF638DAD", type: "item", item: "minecraft:netherite_ingot", count: 4 }
+				{ id: "1A7C009D92963D02", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Frosted Prison"
+			tasks: [
+				{ id: "DDD4565217976747", type: "kill", entity: "cataclysm:maledictus", value: 1L }
+			]
+			title: "Maledictus"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["354CF81811115C48"]
+			description: [
+				"The storm made flesh, on an Acropolis above the sea. Follow the &eStorm Eye&r."
+			]
+			icon: "cataclysm:essence_of_the_storm"
+			id: "69ECB52761C942F9"
+			rewards: [
+				{ id: "4D50F26BBE499009", type: "item", item: "cataclysm:storm_eye", count: 2 }
+				{ id: "BA945D15E57F02DC", type: "item", item: "minecraft:netherite_ingot", count: 4 }
+				{ id: "2A30F68E7CEA154D", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Acropolis"
+			tasks: [
+				{ id: "949973D57E3ACE8A", type: "kill", entity: "cataclysm:scylla", value: 1L }
+			]
+			title: "Scylla"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["18FBADCEFCCE8366", "69ECB52761C942F9", "A614AFA154249D30", "4401A180DFF529C3"]
+			description: [
+				"Every monster of the old world, dead by your party's hands. There is nothing left to prove."
+				""
+				"&6Thank you for playing.&r"
+			]
+			icon: "minecraft:nether_star"
+			id: "F63EF2B7FA544787"
+			rewards: [
+				{ id: "9B7C93FF331C1A81", type: "choice", table_id: 7987995593170627584L }
+				{ id: "E1E968B91272392A", type: "item", item: "minecraft:nether_star", count: 4 }
+				{ id: "8E2ECC78883F1AD5", type: "xp_levels", xp_levels: 30 }
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "481C49FA4B0CFEBD", type: "checkmark", title: "We did it" }
+			]
+			title: "Legend of Aethelgard"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Epilogue: the kingdom is yours. What will you make of it?"]
+	title: "Act VI - The Golden Age of Aethelgard"
+}

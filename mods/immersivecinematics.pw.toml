@@ -1,0 +1,14 @@
+name = "ImmersiveCinematics"
+filename = "ImmersiveCinematics-forge-1.20.1-0.3.5.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/9374fX7L/versions/vuLBHSJu/ImmersiveCinematics-forge-1.20.1-0.3.5.jar"
+hash-format = "sha512"
+hash = "d0ac92ff71aeb1a66d8662830a41806850d0a85f7bb207fe537ba0134d82ee37a810b9541cf709fcdf1e6c70ee01d1f3bc05112411b2791b7771721194fae2ca"
+
+[update]
+[update.modrinth]
+mod-id = "9374fX7L"
+version = "vuLBHSJu"

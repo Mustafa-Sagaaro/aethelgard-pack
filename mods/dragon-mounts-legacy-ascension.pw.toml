@@ -1,0 +1,14 @@
+name = "Dragon Mounts: Legacy — Ascension"
+filename = "dragon-mounts-legacy-ascension-1.0.0-beta.1.jar"
+side = "both"
+pin = true
+
+[download]
+hash-format = "sha1"
+hash = "fc06dbc16f7cf4f75cb0a5b869001512f1851489"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9529831
+project-id = 1794534

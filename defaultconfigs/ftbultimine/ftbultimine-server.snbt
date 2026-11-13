@@ -1,0 +1,20 @@
+{
+	cancel_on_block_break_fail: false
+	exhaustion_per_block: 4.0d
+	experience_per_block: 0.0d
+	max_blocks: 64
+	merge_tags: [
+		"minecraft:base_stone_overworld"
+		"c:*_ores"
+		"forge:ores/*"
+	]
+	merge_tags_shaped: ["*"]
+	prevent_tool_break: 1
+	require_tool: true
+	right_click_axe: true
+	right_click_crystals: true
+	right_click_harvesting: true
+	right_click_hoe: true
+	right_click_shovel: true
+	ultimine_cooldown: 0L
+}

@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act3"
+	group: "6C73C0449332A491"
+	icon: "cataclysm:burning_ashes"
+	id: "C188AD30DB9140B8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1A20C137AB75E2C9"]
+			description: [
+				"Build a portal and step through. The Burning Arena lies somewhere in the Nether."
+				""
+				"The &eFlame Eye&r flies towards it when thrown, and the reward below prints its coordinates."
+			]
+			icon: "minecraft:netherrack"
+			id: "87FE3D4BC54C6FD6"
+			rewards: [
+				{ id: "A052C1F2A63DB80B", type: "item", item: "cataclysm:flame_eye", count: 4 }
+				{ id: "6775175FA5D5BFFB", type: "command", title: "Reveal: the Burning Arena", icon: "minecraft:compass", command: "/locate structure cataclysm:burning_arena", elevate_perms: true, silent: false }
+				{ id: "D279D4EB7D2801FC", type: "item", item: "minecraft:golden_apple", count: 4 }
+			]
+			tasks: [
+				{ id: "785671182E2F0636", type: "dimension", dimension: "minecraft:the_nether" }
+			]
+			title: "Through the Fire"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["87FE3D4BC54C6FD6"]
+			description: [
+				"Fight through the Ignited Revenants to the altar at the centre. Place &eBurning Ashes&r on the Altar of Fire to call the Warden."
+				""
+				"Vein mining is disabled on arena blocks - nobody tunnels into this fight."
+			]
+			icon: "cataclysm:burning_ashes"
+			id: "6780B091B876DB09"
+			rewards: [
+				{ id: "963906BC001D163A", type: "item", item: "cataclysm:burning_ashes", count: 2 }
+				{ id: "5A900B132232F4E9", type: "xp_levels", xp_levels: 5 }
+			]
+			tasks: [
+				{ id: "32B92F9A6D80A8A4", type: "structure", structure: "cataclysm:burning_arena" }
+			]
+			title: "The Burning Arena"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6780B091B876DB09"]
+			description: [
+				"A knight of living flame. He heals on every hit he lands, so do not trade blows - roll, guard, punish."
+				""
+				"Second phase: he loses the shield and gets &cfaster&r."
+			]
+			icon: "cataclysm:ignitium_ingot"
+			id: "0F456DDAF17F9FF5"
+			rewards: [
+				{ id: "6605A3626E49E0B1", type: "choice", table_id: 4383617730508607161L }
+				{ id: "FCDAB50B14C282C5", type: "item", item: "minecraft:netherite_ingot", count: 2 }
+				{ id: "7E0DAF6C8B90F046", type: "xp_levels", xp_levels: 12 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Warden of Cinders"
+			tasks: [
+				{ id: "BC3D7FF6AB24EA0F", type: "kill", entity: "cataclysm:ignis", value: 1L }
+			]
+			title: "Ignis"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A20C137AB75E2C9"]
+			description: [
+				"The Sunken City rests on the floor of a deep ocean. Bring water breathing, a Depth Strider enchant - or a water dragon."
+				""
+				"The &eAbyss Eye&r leads there; the reward below prints its coordinates."
+			]
+			icon: "minecraft:heart_of_the_sea"
+			id: "D48FD2CA69ADB798"
+			rewards: [
+				{ id: "31974B0EC76335A0", type: "item", item: "cataclysm:abyss_eye", count: 4 }
+				{ id: "A8FF651EF9645B66", type: "command", title: "Reveal: the Sunken City", icon: "minecraft:compass", command: "/locate structure cataclysm:sunken_city", elevate_perms: true, silent: false }
+				{ id: "0A3BC5844E66B24E", type: "item", item: "minecraft:turtle_helmet" }
+			]
+			tasks: [
+				{ id: "701843DCE742DAC6", type: "checkmark", title: "Show me the way" }
+			]
+			title: "The Drowned Road"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D48FD2CA69ADB798"]
+			description: [
+				"Deeplings guard the streets. At the heart of the city is the Altar of the Abyss - offer it an &eAbyssal Sacrifice&r."
+			]
+			icon: "cataclysm:abyssal_sacrifice"
+			id: "D75937F65065EB7E"
+			rewards: [
+				{ id: "63CAAF57D1E1834E", type: "item", item: "cataclysm:abyssal_sacrifice", count: 2 }
+				{ id: "406F01BBDB9281D4", type: "xp_levels", xp_levels: 5 }
+			]
+			tasks: [
+				{ id: "FC25DE1F7F15CF95", type: "structure", structure: "cataclysm:sunken_city" }
+			]
+			title: "The Sunken City"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D75937F65065EB7E"]
+			description: [
+				"It is enormous, it is fast, and its Abyss Blast will find you through walls. Break the crystals when it shields itself."
+			]
+			icon: "cataclysm:tidal_claws"
+			id: "FFBB9904A63B12FB"
+			rewards: [
+				{ id: "FB19DAF291691B7D", type: "choice", table_id: 4383617730508607161L }
+				{ id: "A9076C511D65EF67", type: "item", item: "minecraft:netherite_ingot", count: 2 }
+				{ id: "FC89559F90301CEE", type: "xp_levels", xp_levels: 12 }
+			]
+			shape: "diamond"
+			size: 1.8d
+			subtitle: "Warden of the Abyss"
+			tasks: [
+				{ id: "52F79A4923AF81E6", type: "kill", entity: "cataclysm:the_leviathan", value: 1L }
+			]
+			title: "The Leviathan"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["87FE3D4BC54C6FD6"]
+			description: [
+				"&7Optional.&r A Netherite Monstrosity guards a forge deep in the soul sand valleys. It hits like a siege engine - and drops the materials for some of the best gear in Aethelgard."
+			]
+			icon: "cataclysm:monstrous_horn"
+			id: "7B066B64833F132B"
+			optional: true
+			rewards: [
+				{ id: "CE46330C392F1BEC", type: "item", item: "cataclysm:monstrous_eye", count: 2 }
+				{ id: "CAC20A7B8E140A1A", type: "item", item: "minecraft:netherite_ingot", count: 3 }
+				{ id: "D57237D0161CE2ED", type: "xp_levels", xp_levels: 10 }
+			]
+			tasks: [
+				{ id: "7680A1B0C59CF75A", type: "kill", entity: "cataclysm:netherite_monstrosity", value: 1L }
+			]
+			title: "The Soul Blacksmith"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F456DDAF17F9FF5", "FFBB9904A63B12FB"]
+			description: [
+				"The &6Cinder Heart&r and the &3Sunken Astrolabe&r. Four of six."
+				""
+				"The last two Wardens hide where light does not go, and where only illagers dare to build."
+			]
+			icon: "kubejs:cinder_heart"
+			id: "A1698ECAE657436D"
+			rewards: [
+				{ id: "7B28F6FA0E26A4D0", type: "choice", table_id: 7987995593170627584L }
+				{ id: "A3B9501EE745A851", type: "item", item: "minecraft:diamond", count: 16 }
+				{ id: "0999F6636A3DA4E1", type: "xp_levels", xp_levels: 15 }
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{ id: "480CBB43868A2678", type: "item", item: "kubejs:cinder_heart" }
+				{ id: "C138E07EC6064E71", type: "item", item: "kubejs:sunken_astrolabe" }
+			]
+			title: "Fire and Water"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Ignis in the Burning Arena. The Leviathan in the Sunken City."]
+	title: "Act III - Depths of Fire & Abyss"
+}

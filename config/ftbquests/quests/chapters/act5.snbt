@@ -1,0 +1,92 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act5"
+	group: "6C73C0449332A491"
+	icon: "kubejs:key_of_the_sovereign"
+	id: "A7C7DC3B0CD1BB86"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3B005C8FFF20FD73"]
+			description: [
+				"The ritual: in a crafting table, place the six &dPlanar Relics&r around an &eEye of Ender&r, with a &dFragment of the Seal&r on each side of the eye."
+				""
+				"&7Top row: Crown, Idol, Astrolabe. Middle: Fragment, Eye, Fragment. Bottom: Cinder Heart, Sigil, Celestial Eye.&r"
+				""
+				"Everyone in Aethelgard will know when it is done."
+			]
+			id: "94AAC2221229D32F"
+			rewards: [
+				{ id: "128F1EFB714C8141", type: "command", title: "Reveal: the Stronghold", icon: "minecraft:compass", command: "/locate structure #minecraft:eye_of_ender_located", elevate_perms: true, silent: false }
+				{ id: "A4384B75FF87528C", type: "xp_levels", xp_levels: 10 }
+			]
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "The ritual"
+			tasks: [
+				{ id: "865FE804A15FED9C", type: "item", item: "kubejs:key_of_the_sovereign" }
+			]
+			title: "Six Become One"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["94AAC2221229D32F"]
+			description: [
+				"Eyes of Ender still fly towards the Stronghold - but the portal no longer accepts them. Only the &dKey of the Sovereign&r can open it."
+				""
+				"Gather your whole party and your dragons at the portal room. Then use the Key on any End Portal Frame."
+				""
+				"&cThis cannot be undone.&r"
+			]
+			icon: "minecraft:end_portal_frame"
+			id: "D76E058C8E2C4589"
+			rewards: [
+				{ id: "4BA222E62E0B8962", type: "item", item: "minecraft:golden_apple", count: 8 }
+				{ id: "84BFDE6198BBC0CC", type: "item", item: "minecraft:enchanted_golden_apple", count: 2 }
+				{ id: "65D4B987C1DA45BE", type: "xp_levels", xp_levels: 10 }
+			]
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "Break the Seal"
+			tasks: [
+				{ id: "023291C9DBD74344", type: "dimension", dimension: "minecraft:the_end" }
+			]
+			title: "The Gate"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["D76E058C8E2C4589"]
+			description: [
+				"What the old king locked away. It has twice the health of any dragon you have heard of, it calls lightning, and its crystals grow back."
+				""
+				"&ePhase II (66%)&r: it summons its guard - Endermaptera and an Ender Golem."
+				"&ePhase III (33%)&r: the Seal screams, the light fails, and more guards arrive. Finish it."
+				""
+				"Your dragons can fly here. So can it."
+			]
+			icon: "minecraft:dragon_head"
+			id: "5C78E40B5B004402"
+			rewards: [
+				{ id: "EE98E906D06EE326", type: "choice", table_id: 7987995593170627584L }
+				{ id: "EE522666D1648D49", type: "item", item: "minecraft:netherite_ingot", count: 8 }
+				{ id: "600D37285E7BE61B", type: "item", item: "minecraft:elytra" }
+				{ id: "83DF9FD3050403AA", type: "xp_levels", xp_levels: 30 }
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Final battle"
+			tasks: [
+				{ id: "4C7527409589C5B5", type: "kill", entity: "minecraft:ender_dragon", value: 1L }
+			]
+			title: "The Abyssal Sovereign"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Forge the Key. Open the gate. End it."]
+	title: "Act V - The Shattered Seal"
+}

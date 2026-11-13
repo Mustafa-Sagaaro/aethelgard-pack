@@ -1,0 +1,13 @@
+{
+	id: "E6CCFE3C1AF741FA"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: { id: "dragonmounts:dragon_egg", Count: 1b, tag: {BlockEntityTag:{Breed:"dragonmounts:fire"}} } }
+		{ item: { id: "dragonmounts:dragon_egg", Count: 1b, tag: {BlockEntityTag:{Breed:"dragonmounts:ice"}} } }
+		{ item: { id: "dragonmounts:dragon_egg", Count: 1b, tag: {BlockEntityTag:{Breed:"dragonmounts:forest"}} } }
+		{ item: { id: "dragonmounts:dragon_egg", Count: 1b, tag: {BlockEntityTag:{Breed:"dragonmounts:water"}} } }
+		{ item: { id: "dragonmounts:dragon_egg", Count: 1b, tag: {BlockEntityTag:{Breed:"dragonmounts:aether"}} } }
+	]
+	title: "Choose Your Dragon"
+}

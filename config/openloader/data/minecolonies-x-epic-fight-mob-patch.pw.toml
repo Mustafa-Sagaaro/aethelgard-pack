@@ -1,0 +1,13 @@
+name = "Minecolonies X Epic Fight Mob Patch"
+filename = "minecolonies_x_epicfight_datapack.zip"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "87dc6fe8f3763ba6189ac98105d1c2eed04b541e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7925464
+project-id = 1513901

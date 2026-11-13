@@ -1,0 +1,14 @@
+{
+	id: "21B3257686003D42"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "simplyswords:iron_claymore" }
+		{ item: "simplyswords:iron_katana" }
+		{ item: "simplyswords:iron_spear" }
+		{ item: "simplyswords:iron_twinblade" }
+		{ item: "epicfight:iron_greatsword" }
+		{ item: "epicfight:iron_tachi" }
+	]
+	title: "Choose Your Steel"
+}

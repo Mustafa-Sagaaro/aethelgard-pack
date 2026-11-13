@@ -1,0 +1,58 @@
+#长按跳过键的判定时间（毫秒）
+#范围: 500 ~ 10000，默认 3000
+#Range: 500 ~ 10000
+skipHoldThresholdMs = 1500
+#过场动画播放时显示跳过提示（长按进度环 + 按键提示）
+showSkipHud = true
+#跳过投票所需比例（百分比），全部玩家投票后跳过才生效
+#例: 100 = 所有玩家必须投跳过, 50 = 半数即可
+#Range: 10 ~ 100
+skipVoteRatio = 50
+#启用调试日志输出
+debugLogging = false
+#是否启用编辑器（F6 键绑定与编辑器界面；关闭即无编辑器版本，需重启生效）
+editorEnabled = true
+#全局总闸：区块预加载（服务端强制；脚本可 meta.preload:false 单独关闭）
+preloadEnabled = true
+#相机位置上报间隔（tick）
+#Range: 1 ~ 600
+preloadReportInterval = 20
+#相机区每 tick 补发包上限（防一次性洪峰，渐续铺开）
+#Range: 1 ~ 1000
+preloadMaxBurstPerTick = 20
+#每 tick 新增区块 ticket 上限
+#Range: 1 ~ 1000
+preloadMaxRequestsPerTick = 8
+#预加载范围上限（区块）：防止低配/过大视距导致卡顿；有效半径不会超过它
+#Range: 1 ~ 64
+preloadRadiusCap = 32
+#强制使用配置预设范围（忽略玩家渲染距离）
+preloadForceRadius = false
+#强制时的预设范围（区块）
+#Range: 1 ~ 64
+preloadForceRadiusValue = 8
+#lookahead 预载：当前片段剩余多少秒开始预载下一片段
+#Range: 0.0 ~ 60.0
+preloadPrewarmLeadSeconds = 2.0
+#lookahead 预载：下一片段预载范围（区块，取小区域慢速铺）
+#Range: 1 ~ 64
+preloadPrewarmRadius = 8
+#lookahead 预载：每 tick 新增预载 ticket 上限（慢速，默认 6）
+#Range: 1 ~ 1000
+preloadPrewarmRequestsPerTick = 6
+#location 触发器的轮询间隔（tick，20 tick = 1 秒）
+#Range: 1 ~ 600
+triggerPollInterval_location = 20
+#biome 触发器的轮询间隔（tick）
+#Range: 1 ~ 600
+triggerPollInterval_biome = 40
+#inventory 触发器的轮询间隔（tick）
+#Range: 1 ~ 600
+triggerPollInterval_inventory = 20
+#structure 触发器的轮询间隔（tick）
+#Range: 1 ~ 600
+triggerPollInterval_structure = 20
+#gamestage 触发器的轮询间隔（tick）
+#Range: 1 ~ 600
+triggerPollInterval_gamestage = 20
+

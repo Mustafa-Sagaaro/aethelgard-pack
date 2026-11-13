@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "id": "boss_stalker",
+    "name": "The Stalker",
+    "author": "Aethelgard",
+    "version": 3,
+    "description": "Pre-fight intro for The Stalker. Started by the KubeJS director for the whole nearby party.",
+    "block_keyboard": true,
+    "block_mouse": true,
+    "block_mob_ai": true,
+    "hide_hud": true,
+    "render_player_model": true,
+    "pause_when_game_paused": false,
+    "interruptible": true,
+    "skippable": true,
+    "hold_at_end": false,
+    "skip_vote_ratio": 50
+  },
+  "timeline": {
+    "total_duration": 5.0,
+    "tracks": [
+      {
+        "type": "LETTERBOX",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 5.0,
+            "keyframes": [
+              {
+                "time": 0,
+                "aspect_ratio": 1.78
+              },
+              {
+                "time": 0.7,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 4.3,
+                "aspect_ratio": 2.35
+              },
+              {
+                "time": 5.0,
+                "aspect_ratio": 1.78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "CAMERA",
+        "clips": [
+          {
+            "start_time": 0,
+            "duration": 5.0,
+            "transition": "cut",
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "position": {
+                  "dx": 12,
+                  "dy": 8.0,
+                  "dz": 7.199999999999999
+                },
+                "follow": "entity",
+                "follow_selector": "@e[type=deeperdarker:stalker]",
+                "look_at": "entity",
+                "look_at_selector": "@e[type=deeperdarker:stalker]",
+                "fov": 75,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 1.9,
+                "position": {
+                  "dx": -6.6000000000000005,
+                  "dy": 5,
+                  "dz": 9.600000000000001
+                },
+                "follow": "entity",
+                "follow_selector": "@e[type=deeperdarker:stalker]",
+                "look_at": "entity",
+                "look_at_selector": "@e[type=deeperdarker:stalker]",
+                "fov": 62,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 3.6,
+                "position": {
+                  "dx": -2.4000000000000004,
+                  "dy": 2.25,
+                  "dz": 5.04
+                },
+                "follow": "entity",
+                "follow_selector": "@e[type=deeperdarker:stalker]",
+                "look_at": "entity",
+                "look_at_selector": "@e[type=deeperdarker:stalker]",
+                "fov": 48,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              },
+              {
+                "time": 5.0,
+                "position": {
+                  "fwd": -2.5,
+                  "right": 0.6,
+                  "up": 0.4,
+                  "up_axis": "world"
+                },
+                "look_at": "entity",
+                "look_at_selector": "@e[type=deeperdarker:stalker]",
+                "fov": 70,
+                "yaw": 0,
+                "pitch": 0,
+                "roll": 0,
+                "zoom": 1.0
+              }
+            ],
+            "cam_breath_enabled": true,
+            "cam_breath_intensity": 0.04,
+            "cam_breath_type": "perlin"
+          }
+        ]
+      },
+      {
+        "type": "OVERLAY",
+        "clips": [
+          {
+            "start_time": 0.6,
+            "duration": 3.4,
+            "layer_type": "subtitle",
+            "text": "THE STALKER\nWarden of the Echoing Sigil",
+            "z_index": 30,
+            "interpolation": "smooth",
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              },
+              {
+                "time": 0.5,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              },
+              {
+                "time": 2.9,
+                "opacity": 1.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              },
+              {
+                "time": 3.4,
+                "opacity": 0.0,
+                "x": 0.5,
+                "y": 0.74,
+                "font_scale": 2.4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AUDIO",
+        "clips": [
+          {
+            "start_time": 0.1,
+            "duration": 4.0,
+            "sound": "minecraft:entity.warden.roar",
+            "source": "minecraft",
+            "volume": 0.8,
+            "pitch": 0.8,
+            "category": "ambient",
+            "attenuation": "none",
+            "fade_in": 0.2,
+            "fade_out": 0.6,
+            "keyframes": [
+              {
+                "time": 0,
+                "volume": 0.8
+              },
+              {
+                "time": 4.0,
+                "volume": 0.8
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+# files that live next to the pack but are not part of it
+.DS_Store
+*.md
+.git*
